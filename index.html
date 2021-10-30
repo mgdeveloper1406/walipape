@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <h1>Image Grid</h1>
+      <input
+        type="search"
+        name="search"
+        id="search"
+        value=""
+        placeholder="Search caption"
+      />
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="container snow">
+          <img
+            src="image/15acb8ac-f582-4ef9-a24b-35de2fcd2e52.jfif"
+            style="width: 100%"
+          />
+          <div class="overlay">
+            <span
+              class="enlarge"
+              onClick="fullImage('image/15acb8ac-f582-4ef9-a24b-35de2fcd2e52.jfif', this)"
+              >Enlarge</span
+            >
+            <span class="download"
+              ><a
+                href="image/15acb8ac-f582-4ef9-a24b-35de2fcd2e52.jfif"
+                download
+                >Download</a
+              ></span
+            >
+          </div>
+          <span class="caption">snow</span>
+        </div>
+        <div class="container rocks">
+          <img src="image/gurudhanmar lake.jfif" style="width: 100%" />
+          <div class="overlay">
+            <span
+              class="enlarge"
+              onClick="fullImage('image/gurudhanmar lake.jfif', this)"
+              >Enlarge</span
+            >
+            <span class="download"
+              ><a href="image/gurudhanmar lake.jfif" download>Download</a></span
+            >
+          </div>
+          <span class="caption">Rocks</span>
+        </div>
+
+        <div class="container kolkata">
+          <img src="image/stpauls.jfif" style="width: 100%" />
+          <div class="overlay">
+            <span
+              class="enlarge"
+              onClick="fullImage('image/stpauls.jfif', this)"
+              >Enlarge</span
+            >
+            <span class="download"
+              ><a href="image/stpauls.jfif" download>Download</a></span
+            >
+          </div>
+          <span class="caption">kolkata</span>
+        </div>
+        <div class="container nature">
+          <img src="image/moon.jfif" style="width: 100%" />
+          <div class="overlay">
+            <span class="enlarge" onClick="fullImage('image/moon.jfif', this)"
+              >Enlarge</span
+            >
+            <span class="download"
+              ><a href="image/moon.jfif" download>Download</a></span
+            >
+          </div>
+          <span class="caption">Nature</span>
+        </div>
+        <div class="container mist">
+          <img src="image/kasol.jfif" style="width: 100%" />
+          <div class="overlay">
+            <span class="enlarge" onClick="fullImage('image/kasol.jfif', this)"
+              >Enlarge</span
+            >
+            <span class="download"
+              ><a href="image/kasol.jfif" download>Download</a></span
+            >
+          </div>
+          <span class="caption">Mist</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01" />
+      <div id="caption"></div>
+    </div>
+
+    <div class="container mountainsk">
+      <img src="image/victoria tunnel viewpoint.jfif" style="width: 100%" />
+      <div class="overlay">
+        <span
+          class="enlarge"
+          onClick="fullImage('image/victoria tunnel viewpoint.jfif', this)"
+          >Enlarge</span
+        >
+        <span class="download"
+          ><a href="image/victoria tunnel viewpoint.jfif" download
+            >Download</a
+          ></span
+        >
+      </div>
+      <span class="caption">mountainsk</span>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
